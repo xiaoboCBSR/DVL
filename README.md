@@ -8,17 +8,17 @@ DVL is a deep-learning approach for column annotation with noisy labels, i.e. tr
 2. Download the extracted distributed representations of WebTables from []. The extracted feature files go to `./features`.
 3. To train a model, run 'train_test_dvl.py' with the path to the configs.
 
-'''shell
+'''
 python train_test_dvl.py -c=./configs/sherlock+LDA.txt
 '''
 
 4. For evaluation:
 
-'''shell
+'''
 python train_test_dvl.py -c=./configs/sherlock+LDA.txt --mode=eval --model_list=./results/type78/sherlock+LDA/DVL_pairflip_0.45.pt
 ''' 
 
 ## Contact 
 
-To get help with problems using Sato or replicating our results, please submit a GitHub issue.
+To get help with problems using DVL or replicating our results, please submit a GitHub issue.
 
