@@ -66,10 +66,17 @@ if __name__ == "__main__":
 
     # decisive vector learning
     p.add('--fc_type', type=str_or_none, default=None, help='type of fc layer')
+<<<<<<< HEAD
     p.add('--scale', type=int, default=32, help='scale')
     p.add('--t', type=float, default=0.0, help='weight for decisive vectors')
     p.add('--margin', type=float, default=0.0, help='margin for margin-based losses')
     p.add('--decisive_margin', type=float, default=0.0, help='decisive margin to indicate decisive vectors')
+=======
+    p.add('--scale', type=int, default=64, help='scale')
+    p.add('--t', type=float, default=0.0, help='weight for decisive vectors')
+    p.add('--margin', type=float, default=0.5, help='margin for margin-based losses')
+    p.add('--decisive_margin', type=float, default=0.5, help='decisive margin to indicate decisive vectors')
+>>>>>>> 1b11fde2986d2af145dbe789e3c1260cdade51b8
 
     # parse configs
     args = p.parse_args()
