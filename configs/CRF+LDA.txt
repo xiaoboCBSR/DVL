@@ -1,0 +1,13 @@
+MAX_COL_COUNT = 6
+table_batch_size = 10
+corpus_list = [webtables1-p1, webtables2-p1]
+init_matrix_path = matrix_co_W0_type78.npy
+epochs = 15
+topic = num-directstr_thr-0_tn-400
+pre_trained_sherlock_path = None_pairflip_0.45_0.0_0.0_0.0_32_100_model.pt # all_None.pt
+training_acc = False
+fc_type = None
+multi_col_only = True
+
+noise_type = pairflip  # pairflip or symmetric
+noise_rate = 0.45
