@@ -15,7 +15,7 @@ python train_test_DVL.py -c=./configs/sherlock+LDA.txt
 4. For evaluation:
 
 ```shell
-python train_test_DVL.py -c=./configs/sherlock+LDA.txt --multi_col_only=False --mode=eval --model_list=./results/type78/sherlock+LDA/DVL_pairflip_0.45.pt
+python train_test_DVL.py -c=./configs/sherlock+LDA.txt --multi_col_only=False --mode=eval --model_list=./results/type78/sherlock+LDA/DVL_pairflip_0.45_0.2.pt
 ``` 
 
 ## Contact 
