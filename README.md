@@ -9,13 +9,13 @@ DVL is a deep-learning approach for column annotation with noisy labels, i.e. tr
 3. To train a model, run 'train_test_dvl.py' with the path to the configs.
 
 ```shell
-python train_test_dvl.py -c=./configs/sherlock+LDA.txt
+python train_test_DVL.py -c=./configs/sherlock+LDA.txt
 ```
 
 4. For evaluation:
 
 ```shell
-python train_test_dvl.py -c=./configs/sherlock+LDA.txt --multi_col_only=False --mode=eval --model_list=./results/type78/sherlock+LDA/DVL_pairflip_0.45.pt
+python train_test_DVL.py -c=./configs/sherlock+LDA.txt --multi_col_only=False --mode=eval --model_list=./results/type78/sherlock+LDA/DVL_pairflip_0.45.pt
 ``` 
 
 ## Contact 
