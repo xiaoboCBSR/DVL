@@ -139,7 +139,7 @@ class SherlockClassifier(nn.Module):
 
         return out
 
-    def forward(self, X: Dict[str, torch.Tensor], y, fc_type='FC', scale=32, t=0.0, margin=0.0, decisive_margin=0.0):
+    def forward(self, X: Dict[str, torch.Tensor], y, fc_type='Test', scale=32, t=0.0, margin=0.0, decisive_margin=0.0):
         out = self.embedding(X)
         # out = self.resnet1d_embedding(X)
         # TODO(Yoshi): Probably, need relu&droput?

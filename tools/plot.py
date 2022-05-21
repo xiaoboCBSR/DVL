@@ -84,10 +84,10 @@ def per_type_plot(df_A, df_B, name_A, name_B):
 if __name__ == "__main__":
     # import data
     path = './plot_data'
-    result_sherlock_pair = pd.read_csv(join(path, 'pairflip_result_sherlock+LDA_None.csv'))
-    result_dvl_pair = pd.read_csv(join(path, 'pairflip_result_sherlock+LDA_RV-AM.csv'))
-    result_sherlock_sym = pd.read_csv(join(path, 'sym_result_sherlock+LDA_None.csv'))
-    result_dvl_sym = pd.read_csv(join(path, 'sym_result_sherlock+LDA_RV-AM.csv'))
+    result_sherlock_pair = pd.read_csv(join(path, 'pairflip_result_CRF+LDA_None.csv'))
+    result_dvl_pair = pd.read_csv(join(path, 'pairflip_result_sherlock+LDA_DVL.csv'))
+    result_sherlock_sym = pd.read_csv(join(path, 'symmetric_result_sherlock_None.csv'))
+    result_dvl_sym = pd.read_csv(join(path, 'symmetric_result_sherlock+LDA_DVL.csv'))
 
     naming = {
         'SATO': 'SATO',
@@ -95,7 +95,7 @@ if __name__ == "__main__":
         'DVL': 'DVL'
     }
 
-    f1 = per_type_plot(result_dvl_pair, result_sherlock_pair, naming['DVL'], naming['Sherlock'])  # LDA
-    f2 = per_type_plot(result_dvl_sym, result_sherlock_sym, naming['DVL'], naming['SATO'])  # LDA
-    save(f1, 'f1.png', scale_factor=12.0)
-    save(f2, 'f2.png', scale_factor=12.0)
+    f1 = per_type_plot(result_dvl_pair, result_sherlock_pair, naming['DVL'], naming['SATO'])  # LDA
+    f2 = per_type_plot(result_dvl_sym, result_sherlock_sym, naming['DVL'], naming['Sherlock'])  # LDA
+    save(f1, 'DVL_SATO.png', scale_factor=12.0)
+    save(f2, 'DVL_Sherlock.png', scale_factor=12.0)

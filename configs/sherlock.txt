@@ -3,6 +3,8 @@ epochs = 100
 batch_size = 512
 sherlock_feature_groups = [char, word, par, rest]
 topic = None
+
 multi_col_only = False
+
 noise_type = symmetric  # pairflip or symmetric
 noise_rate = 0.5
