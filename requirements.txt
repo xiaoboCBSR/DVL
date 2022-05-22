@@ -1,0 +1,7 @@
+torch==1.7.1+cu92
+torchaudio==0.7.2
+torchvision==0.8.2+cu92
+altair==4.1.0
+
+
+
